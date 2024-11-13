@@ -1,0 +1,38 @@
+Portfolio : 
+  titre : Portfolio Lothaire QUINTARD
+  description : Présentation de mes compétences et de moi 
+  pages1 : Accueil
+    Prenom : Lothaire
+    Nom de famille : QUINTARD
+    Date Naissance : 28 Septembre 2006
+    Présentation : Bonjour , je m'appelle Lothaire
+  pages2 : Compétences
+    Domaines : 
+    Items : Maitrise de HTML , CSS , PHP , YAML
+    Niveau : 5 étoiles
+  pages3 : Realisations
+    Titre : Site HTML
+    Description : Ce site est le projet demandés lors de l'année
+  pages4 : Formation
+    Nom de la formation : STI2D
+    Établissement : Lycée Jacque Prevert
+    Date de début : 2020
+    Date de fin : 2024
+    Lieu : Pont Audemer
+    Contenue : Cette formation consister a étudier l'ingénieurie et l'informatique
+    Note de Bac : 13.74
+    Nom de la formation2 : BTS SIO
+    Établissement2 : St Ursule
+    Date de début2 : 2024
+    Date de fin2 : 2026
+    Lieu2 : CAEN 14000 
+    Contenue2 : Cette formation consiste a étudier le réseaux et le developement
+    CV : 
+    
+  pages : Contact 
+    Formulaire de contact :
+      Nom expéditeur : 
+      Adresse du couriel :
+      Objet du message :
+      Contenu du message :
+  
