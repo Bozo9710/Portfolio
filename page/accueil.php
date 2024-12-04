@@ -35,7 +35,9 @@
             $data=yaml_parse_file('../data/accueil.yaml');
             echo $data["Prenom"]." ".$data["Nom"]."<br>";
             echo '<img src="../image/'.$data["Image1"].'"><br> ';
-            echo $data["Presentation"];              
+            echo $data["Presentation"]."<br>"; 
+            echo $data["Date"];  
+            
             ?>
         </div>
     </section>
