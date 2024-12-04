@@ -8,8 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Accueil Portfolio LOTHAIRE </title>
+    <link rel="stylesheet" href="./css/accueil.css">
 </head>
 <body>
 
@@ -34,10 +34,10 @@
             require_once("../yaml/yaml.php");
             $data=yaml_parse_file('../data/accueil.yaml');
             echo $data["Prenom"]." ".$data["Nom"]."<br>";
-            echo '<img src="../image/'.$data["Image1"].'"><br> ';
-            echo $data["Presentation"]."<br>"; 
-            echo $data["Date"];  
-            
+            echo '<img src="../image/'.$data["PDP"].'"><br> '; 
+            echo $data["Date"] ;  
+            echo $data["Titre2"];
+
             ?>
         </div>
     </section>
