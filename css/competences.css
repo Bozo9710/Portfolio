@@ -8,13 +8,11 @@ body {
 }
 
 header {
-    top: 0px;
-    position: fixed;
     background:linear-gradient(to right, #ff6347, #00bcd4); 
     color: #fff;
     padding: 50px 50px;
     width: 80vw;
-    left: 8vw;
+    margin: auto;
     border-radius: 25px;
     margin-top: 50px;
 }
@@ -191,30 +189,4 @@ footer {
     font-size: 0.9rem;
     color: #333;
     margin: 0;
-}
-/* Conteneur de la bulle horizontale */
-.bulle-horizontale {
-    background-color: #c4daee; /* Couleur douce de fond */
-    border: 4px solid lightblue; /* Bordure légère */
-    border-radius: 25px; /* Coins arrondis pour l'effet de bulle */
-    width: 750px; /* Largeur ajustable selon l'espace disponible */
-    height: 200px; /* Hauteur de la bulle */
-    display: flex;
-    justify-content: center; /* Centrer le contenu horizontalement */
-    align-items: center; /* Centrer le contenu verticalement */
-    text-align: center;
-    margin:-5px auto; /* Espacement et centrage de la bulle sous les autres */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
-    font-size: 1.5rem; /* Taille du texte à l'intérieur */
-    color: #333; /* Couleur du texte */
-}
-
-/* Si tu veux ajouter du texte spécifique dans la bulle */
-.bulle-horizontale p {
-    margin: 0;
-    padding: 0;
-}
-
-section{
-    margin-top: 200px;
 }
