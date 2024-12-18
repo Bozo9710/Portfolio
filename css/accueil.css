@@ -1,4 +1,10 @@
 /* Styles généraux */
+
+* {
+    box-sizing: border-box;
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,29 +20,27 @@ header {
     color: #fff;
     padding: 50px 50px;
     width: 80vw;
-    left: 8vw;
+    left: 9.6vw;
     border-radius: 25px;
     margin-top: 50px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    display: flex ; 
     justify-content: center;
 }
+main{
+    width: 80vw;
+    margin: auto;
+    border:solid red; 
+    
 
-header nav ul li {
-    margin: 0 30px;
 }
 
-header nav ul li a {
+
+header nav a {
     text-decoration: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:xx-large;
+    font-size:20pt;
     color: #fff;
-    padding: 90px;
+    padding: 70px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -89,11 +93,12 @@ footer {
 }
 /* Conteneur des bulles */
 .bulle-container {
+    border:solid #000000;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px; /* Espace entre les bulles */
-    justify-content: center; /* Centrer les bulles */
-    padding: 20px;
+    gap: 0px;  /*Espace entre les bulles */
+    justify-content: space-between; /* Centrer les bulles */
+    padding: 0px; 
 }
 
 /* Style des bulles */
@@ -102,13 +107,12 @@ footer {
     background-color: #c4daee; /* Couleur de fond douce */
     border: 4px solid lightblue; /* Bordure colorée */
     border-radius: 20%; /* Transforme en bulle */
-    width: 600px; /* Largeur fixe */
-    height: 600px; /* Hauteur fixe */
+    width: 450px; /* Largeur fixe */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align:center;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
     transition: transform 0.3s ease;
@@ -149,20 +153,16 @@ footer {
     color: rgb(115, 115, 202);
 
 }
-.bulle .texte3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: xx-large;
-    margin-top: -20px;
-}
 
 
 
 
+/*
 
 .bulle .textA{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -40px;
-    font-size: xx-large;
+    font-size: 20px;
     
 }
 .bulle .textB{
@@ -179,16 +179,22 @@ footer {
     font-size: xx-large;
     
 }
+    .bulle .texte3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    margin-top: -20px;
+}
+    */
 /* Texte dans les bulles */
 .bulle h2 {
-    font-size: 3.3rem;
+    font-size: 26pt;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 10px;
     color: rgb(115, 115, 202);
 }
 
 .bulle p {
-    font-size: 0.9rem;
+    font-size: 20pt;
     color: #333;
     margin: 0;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- En-tête avec navigation -->
-     
+    <main>
     <?php
     // Inclure l'en-tête
     include('page/header.php');
@@ -27,6 +27,6 @@
 
     ?>
 
-
+</main>
 </body>
 </html>

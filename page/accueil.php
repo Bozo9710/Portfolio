@@ -9,13 +9,13 @@
         <div class="bulle-container">
         <!-- Partie 1 -->
         <div class="bulle" id="bulle1">
-            <h2><?php echo $data["Prenom"] . " " . $data["Nom"]; ?></h2>
+            <h2><?php echo $data["Prenom"] . " " . $data["Nom"]; ?></h2>    
             <img src="image/<?php echo $data["PDP"]; ?>" alt="Photo de profil" class="pdp">
             <p class="date"><?php echo $data["Date"]; ?></p>
         </div>
         <!-- Partie 2 -->
         <div class="bulle" id="bulle2">
-            <p class="mid"><?php echo $data["Titre2"]; ?></p>
+            <h2><?php echo $data["Titre2"]; ?></h2>
 
             <p class="textA"><?php echo $data["TextA"]; ?></p>
 
@@ -30,7 +30,7 @@
 
         <!-- Partie 3 -->
         <div class="bulle" id="bulle3">
-            <p class="right"><?php echo $data["Titre3"]; ?></p>
+            <h2><?php echo $data["Titre3"]; ?></h2>
             
             <p class="texte3"><?php echo $data["Texte"]; ?></p>
         </div>
