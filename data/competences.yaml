@@ -1,16 +1,25 @@
-Domaine1 : Code
-  Competence1 : HTML
-  Competence2 : CSS
-  Competence3 : JAVASCRIPT 
-  Competence4 : PHP
-Domaine2 : Réseau 
-  Competence1 : ETUDE DE TRAM 
-  Competence2 : ADRESSEAGE IP 
-  Competence3 : SERVICE DHCP 
-  Competence4 : SERVICE DNS 
-Domaine3 : Bureautique
-  Competence1 : Traitement de texte
-  Competence2 : Excel
-  Competence3 : Powerpoint
-  Competence4 : Email
-  
+Competences:
+  - nom: "HTML"
+    niveau: 90
+  - nom: "CSS"
+    niveau: 80
+  - nom: "JAVASCRIPT"
+    niveau: 70
+  - nom: "PHP"
+    niveau: 85
+  - nom: "ETUDE DE TRAM"
+    niveau: 75
+  - nom: "ADRESSEAGE IP"
+    niveau: 65
+  - nom: "SERVICE DHCP"
+    niveau: 60
+  - nom: "SERVICE DNS"
+    niveau: 85
+  - nom: "Traitement de texte"
+    niveau: 80
+  - nom: "Excel"
+    niveau: 90
+  - nom: "Powerpoint"
+    niveau: 70
+  - nom: "Email"
+    niveau: 85

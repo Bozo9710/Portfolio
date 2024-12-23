@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="../../assets/css/td4/todolist.css">
+</head>
+<body>
+    <h1>Liste de Tâches</h1>
+    <div class="container">
+        <input type="text" id="new-task" placeholder="Ajouter une nouvelle tâche" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+        <ul id="task-list" class="task-list"></ul>
+
+        <div class="controls">
+            <button class="btn-add" onclick="addTask()">Ajouter</button>
+            <button class="btn-delete" onclick="deleteCompleted()">Supprimer Tâches Terminées</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="save-name" placeholder="Nom de sauvegarde" style="flex: 1; padding: 10px; margin-right: 10px;">
+            <button class="btn-save" onclick="saveTasks()">Sauvegarder</button>
+            <button class="btn-load" onclick="loadTasks()">Recharger</button>
+        </div>
+    </div>
+
+    <script src="./../../assets/js/td4/todolist.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercices JavaScript</title>
+  <link rel="stylesheet" href="./../../assets/css/td4/exercices.css">
+
+</head>
+<body>
+
+  <h1>Exercices JavaScript Lothaire</h1>
+
+  <!-- Exercice 1: Changer la couleur de fond -->
+  <section>
+    <h2>1. Changer la couleur de fond</h2>
+    <button onclick="changeBackgroundColor()">Changer la couleur de fond</button>
+  </section>
+
+  <!-- Exercice 2: Ajouter un élément à une liste -->
+  <section>
+    <h2>2. Ajouter un élément à une liste</h2>
+    <input type="text" id="newItem" placeholder="Nouvel élément">
+    <button onclick="addToList()">Ajouter à la liste</button>
+    <ul id="list"></ul>
+  </section>
+
+  <!-- Exercice 3: Calculer la somme de deux nombres -->
+  <section>
+    <h2>3. Calculer la somme de deux nombres</h2>
+    <input type="number" id="num1" placeholder="Premier nombre">
+    <input type="number" id="num2" placeholder="Deuxième nombre">
+    <button onclick="calculateSum()">Additionner</button>
+    <p id="result"></p>
+  </section>
+
+  <!-- Exercice 4: Afficher une image différente selon le choix -->
+  <section>
+    <h2>4. Choisir une image</h2>
+    <select id="imageSelect" onchange="changeImage()">
+      <option value="boxer.jpg">Image 1</option>
+      <option value="malinois.jpg">Image 2</option>
+    </select>
+    <img id="imageDisplay" src="./../../assets/image/boxer.jpg" alt="Image" width="300">
+  </section>
+
+  <!-- Exercice 5: Afficher un message d'alerte sur le survol -->
+  <section>
+    <h2>5. Afficher une alerte au survol</h2>
+    <div onmouseover="showAlert()">Passez la souris ici</div>
+  </section>
+
+  <!-- Exercice 6: Afficher une horloge numérique -->
+  <section>
+    <h2>6. Horloge numérique</h2>
+    <p id="clock"></p>
+  </section>
+
+  <!-- Exercice 7: Demander confirmation pour suppression -->
+  <section>
+    <h2>7. Demander confirmation pour suppression</h2>
+    <div id="elementToDelete">Cet élément peut être supprimé</div>
+    <button onclick="deleteElement()">Supprimer cet élément</button>
+  </section>
+
+  <!-- Exercice 8: Afficher ou cacher un élément avec une case à cocher -->
+  <section>
+    <h2>8. Cacher ou afficher un élément</h2>
+    <input type="checkbox" id="toggleCheckbox" onclick="toggleVisibility()"> Afficher/Masquer l'élément
+    <div id="toggleElement">Je suis un élément caché ou affiché</div>
+  </section>
+
+  <!-- Exercice 9: Formulaire de contact -->
+  <section>
+    <h2>9. Formulaire de contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Nom" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <textarea id="message" placeholder="Message" required></textarea><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <script src="./../../assets/js/td4/exercices.js"></script>
+
+</body>
+</html>

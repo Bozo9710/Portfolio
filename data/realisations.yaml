@@ -1,3 +1,9 @@
-Titre1: ABOUT US (HTML)
-Titre2: CALCULATRICE
-Titre3: MODIFICATION DE STYLE 
+realisation1_titre: "Index Bloc 1 "
+realisation1_description: "Les travaux pratiques du bloc 1 de SLAM m'ont permis d'acquérir des compétences pratiques en programmation, avec des projets axés sur la maîtrise des langages et des outils essentiels dans le développement logiciel, tout en mettant en œuvre des concepts théoriques dans des applications concrètes."
+realisation1_technologies: "PHP, JavaScript, HTML, CSS"
+realisation1_lien: "http://127.0.0.1/Portfolio/page/realisations/"
+
+realisation2_titre: "Calculatrice"
+realisation2_description: "La création de la calculatrice en HTML, CSS et JavaScript m'a permis de développer des compétences en conception d'interfaces utilisateurs, en structuration de pages web et en programmation interactive, tout en combinant la logique JavaScript pour gérer les opérations et l'esthétique via le CSS."
+realisation2_technologies: "JavaScript, HTML, CSS"
+realisation2_lien: "http://127.0.0.1/Portfolio/page/calculatrice.php"

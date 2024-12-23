@@ -1,0 +1,69 @@
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 20px;
+    background-image: url('../../image/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 400px;       
+    background-color:grey;
+
+
+
+  }
+    .stratégie {
+    background: #fbfffb;
+    
+
+  }
+
+
+    .services-conseil {
+    background-color: orange;
+    font-family: Arial;
+    color: white;
+    width: 40%; /* Ajuste la largeur pour imiter une page PDF */
+    margin: 50px auto; /* 50px de marge autour (haut, bas, gauche, droite) */
+    padding: 40px; /* Espace intérieur (marges internes) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour imiter un document */
+    border-radius: 10px; /* Coins légèrement arrondis */
+    text-align: center;
+  }
+
+    .Bulle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 300px;
+        
+    }
+
+    .Bulle1, .Bulle2, .Bulle3, .Bulle4{
+
+        background-color: white;
+        width: 200px ;
+        height: 250px;
+        border-radius :10%;
+        padding: 30px ;
+        box-shadow: 5px 5px 5px orange; /* Effet d'ombre pour imiter un document en orange */
+    }
+
+  i{
+    color: orange;
+    font-size: 37px;
+  }  
+
+  footer {
+    background-color: orange;
+    text-align: center;
+    margin-top: 110px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+  
+
+
+
+    
+

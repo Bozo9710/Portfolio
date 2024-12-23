@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice TD4 </title>
+    <link rel="stylesheet" href="./../../assets/css/td4/calculatrice.css">
+</head>
+<body>
+    <div class="calculatrice">
+        <h1>Calculatrice</h1>
+        <input type="text" id="ecran" placeholder="0" disabled>
+        <div class="boutons">
+            <button onclick="ajouterValeur('7')">7</button>
+            <button onclick="ajouterValeur('8')">8</button>
+            <button onclick="ajouterValeur('9')">9</button>
+            <button onclick="ajouterValeur('/')">/</button>
+            <button onclick="ajouterValeur('4')">4</button>
+            <button onclick="ajouterValeur('5')">5</button>
+            <button onclick="ajouterValeur('6')">6</button>
+            <button onclick="ajouterValeur('*')">*</button>
+            <button onclick="ajouterValeur('1')">1</button>
+            <button onclick="ajouterValeur('2')">2</button>
+            <button onclick="ajouterValeur('3')">3</button>
+            <button onclick="ajouterValeur('-')">-</button>
+            <button onclick="ajouterValeur('0')">0</button>
+            <button onclick="ajouterValeur('.')">.</button>
+            <button onclick="calculer()">=</button>
+            <button onclick="ajouterValeur('+')">+</button>
+            <button onclick="effacer()">C</button>
+        </div>
+    </div>
+
+    <script src="./../../assets/js/td4/calculatrice.js">
+        
+    </script>
+    
+</body>
+</html>

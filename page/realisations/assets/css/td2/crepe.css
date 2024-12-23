@@ -1,0 +1,40 @@
+
+body {
+    font font-family: Arial; sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+
+}
+
+h1,h2 {
+
+    color: 333;
+}
+p {
+    margin: 10px 0;
+}
+
+.document {
+background-color: white;
+width: 80%; /* Ajuste la largeur pour imiter une page PDF */
+margin: 40px auto; /* 50px de marge autour (haut, bas, gauche, droite) */
+padding: 20px; /* Espace intérieur (marges internes) */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour imiter un document */
+border-radius: 10px; /* Coins légèrement arrondis */
+}   
+.document1 {
+background-color: green;
+width: 80%; /* Ajuste la largeur pour imiter une page PDF */
+margin: 50px auto; /* 50px de marge autour (haut, bas, gauche, droite) */
+padding: 40px; /* Espace intérieur (marges internes) */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour imiter un document */
+border-radius: 10px; /* Coins légèrement arrondis */
+}   
+.document2 {
+background-color: grey;
+width: 80%; /* Ajuste la largeur pour imiter une page PDF */
+margin: 50px auto; /* 50px de marge autour (haut, bas, gauche, droite) */
+padding: 40px; /* Espace intérieur (marges internes) */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour imiter un document */
+border-radius: 10px; /* Coins légèrement arrondis */
+}   

@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+
+
+h1{
+    
+    margin-left: 580px;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    position: relative; /* Nécessaire pour positionner la pointe */
+    background-color: #f0f0f0; /* Couleur de la bulle */
+    color: #333; /* Couleur du texte */
+    padding: 40px 100px; /* Espacement interne */
+    border-radius: 15px; /* Donne une forme arrondie */
+    width: max-content; /* Ajuste la taille à la largeur du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour l'effet */
+    background-color: rgb(135, 168, 197);
+    text-align: center;
+    
+}
+#modt {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+.mot{
+    text-align: center;
+    
+    
+    
+}
+.controls {
+    margin-bottom: 100px;
+    margin-left: 380px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    display:flex;
+    justify-content: center;
+    position: relative; /* Nécessaire pour positionner la pointe */
+    background-color: #f0f0f0; /* Couleur de la bulle */
+    color: #333; /* Couleur du texte */
+    padding: 40px 100px; /* Espacement interne */
+    border-radius: 15px; /* Donne une forme arrondie */
+    width: max-content; /* Ajuste la taille à la largeur du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour l'effet */
+    background-color: aliceblue;
+    text-align: center;
+
+}

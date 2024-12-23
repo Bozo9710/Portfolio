@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index de Cours SLAM</title>
+  <link rel="stylesheet" href="./assets/css/index/index.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="profile">
+        <h1>Lothaire Quintard BLOC 1</h1>
+      </div>
+      <nav>
+        <a href="https://github.com/Bozo9710" id="link1" target="_blank" rel="noopener noreferrer">Mon Github</a>
+        <!-- Boutons mode nuit/jour -->
+        <button id="modeToggle" onclick="toggleMode()" aria-label="Toggle night mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Bienvenue !</h2>
+      <p class="typing">Retrouvez ici tous les documents importants et projets réalisés dans vos TDs.</p>
+    </section>
+
+    <div class="buttons">
+      <button id="btnAfficher" onclick="btnToutAfficher()">🔍 Tout afficher</button>
+      <button id="btnCacherTout" onclick="btnRienAfficher()">🚫 Tout cacher</button>
+    </div>
+
+    <section class="folders">
+      <div class="folder" onclick="toggleProjects('td1')">📁 TD1</div>
+      <ul id="td1" class="projects">
+        <li><a href="https://github.com/Bozo9710/B1/blob/main/docs/pages/td1/MethodeGETetPOST.md">Questions</a></li>
+      </ul>
+
+      <div class="folder" onclick="toggleProjects('td2')">📁 TD2</div>
+      <ul id="td2" class="projects">
+        <li><a href="./pages/td2/mention-légales.html">Mentions légales</a></li>
+        <li><a href="./pages/td2/pata-a-crepe.html">Pâtes à crêpes</a></li>
+        <li><a href="./pages/td2/status-juridique.html">Status Juridique</a></li>
+      </ul>
+
+      <div class="folder" onclick="toggleProjects('td3')">📁 TD3</div>
+      <ul id="td3" class="projects">
+        <li><a href="./pages/td3/conseil-gestion.html">Conseil Gestion</a></li>
+        <li><a href="./pages/td3/Blog.html">Blog</a></li>
+        <li><a href="./pages/td3/A Propos de nous.html">A Propos de nous</a></li>
+      </ul>
+
+      <div class="folder" onclick="toggleProjects('td4')">📁 TD4</div>
+      <ul id="td4" class="projects">
+        <li><a href="./pages/td4/calculatrice.html">Calculatrice</a></li>
+        <li><a href="./pages/td4/todolist.html">ToDoList</a></li>
+        <li><a href="./pages/td4/Exercices.html">Exercices</a></li>
+      </ul>
+    </section>                                                                          
+  </main>                                                                         
+
+  <footer>
+    <p>&copy; 2024 Index de Lothaire. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Toggle affichage des projets
+    function toggleProjects(tdId) {
+      const projectsList = document.getElementById(tdId);
+      projectsList.style.display = projectsList.style.display === "none" || projectsList.style.display === "" ? "block" : "none";
+    }
+
+    // Tout afficher
+    function btnToutAfficher() {
+      const allProjects = document.querySelectorAll(".projects");
+      allProjects.forEach(project => (project.style.display = "block"));
+    }
+
+    // Tout cacher
+    function btnRienAfficher() {
+      const allProjects = document.querySelectorAll(".projects");
+      allProjects.forEach(project => (project.style.display = "none"));
+    }
+
+    // Mode Nuit/Mode Jour
+    function toggleMode() {
+      var body = document.body;
+      var button = document.getElementById('modeToggle');
+      
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        button.textContent = "🌞"; // Emote pour mode jour
+      } else {
+        button.textContent = "🌙"; // Emote pour mode nuit
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Style de Texte</title>
+    <link rel="stylesheet" href="./../../assets/css/td4/style-illustration.css">
+    
+</head>
+<body>
+    <h1>Style illustration TP javascript 2</h1>
+
+    <div class="controls">
+        <!-- Choisir la couleur du texte  -->
+        <div class="">
+            <label for="CouleurText">Couleur du texte:</label>
+            <input type="color" id="CouleurText" value="#000000">
+        </div>
+        
+        <!-- CHoisir la taille de mon texte -->
+        <div class="">
+            <label for="taille">Taille de la police:</label>
+            <input type="range" id="taille" min="10" max="100" value="20">
+            <span id="tailleValeur">20px</span>
+        </div>
+
+        <!--Choisir la police d'écriture-->
+        <div class="">
+            <label for="Police">Police d'écriture:</label>
+            <select id="Police">
+                <option value="Arial, Helvetica, sans-serif">Arial</option>
+                <option value="'Courier New', Courier, monospace">Courrier New</option>
+                <option value="'Times New Roman', Times, serif">Time New Roman</option>
+            </select>
+        </div>
+
+        <!-- Chosir l'alignement du texte -->
+        <div class="">
+            <label for="AlignementText">Alignement du texte:</label>
+            <select id="AlignementText">
+                <option value="center">Centre</option>
+                <option value="left">Gauche</option>
+                <option value="right">Droite</option>
+            </select>
+        </div>
+
+        <!-- Choisir le style de la police -->
+        <div class="">
+            <label for="StylePolice">Style de la police:</label>
+            <select id="StylePolice">
+                <option value="normal">Normal</option>
+                <option value="italic">Italique</option>
+                <option value="oblique">Oblique</option>
+            </select>
+        </div>
+
+        <!-- Choisir le style du poids de la police -->
+        <div class="">
+            <label for="PoidsPolice">Poids de la police:</label>
+            <select id="PoidsPolice">
+                <option value="normal">Normal</option>
+                <option value="bold">Gras</option>
+                <option value="lighter">Léger</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mot" id="modt">
+        Hello World ;Bonjour le Monde;Hola Mundo;Hallo Welt; Ciao Mondo;Olá Mundo;Hallo Wereld;Привет, мир;こんにちは、世界
+    </div>
+    <script src="./../../assets/js/td4/style-illustration.js"></script>
+    
+</body>
+</html>
