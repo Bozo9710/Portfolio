@@ -1,0 +1,141 @@
+header {
+    top: 0px;
+    position: fixed;
+    background: linear-gradient(to right, #ff6347, #00bcd4); 
+    color: #fff;
+    padding: 20px 40px;
+    width: 80vw;
+    left: 9.6vw;
+    border-radius: 25px;
+    margin-top: 50px;
+    display: flex; 
+    justify-content:space-around;
+    align-items:center;
+    z-index: 40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+    transition: all 0.3s ease-in-out; /* Transition pour l'effet lors du défilement */
+}
+
+header:hover {
+    transform: scale(1.02); /* Légère mise en avant au survol */
+}
+
+
+header nav {
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18pt;
+    color: #fff;
+    padding: 10px 20px; 
+    font-weight: bold;
+    border-radius: 15px; /* Arrondi des liens */
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1); /* Ajout d'un fond semi-transparent */
+}
+
+header nav a:hover {
+    color: rgb(115, 115, 202);
+    background: rgba(255, 255, 255, 0.3); /* Change le fond au survol */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre au survol */
+}
+
+
+/* Mode nuit - Général */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header en mode nuit */
+.dark-mode header {
+    background: linear-gradient(to right, #333, #555);
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode header nav a {
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode header nav a:hover {
+    color: #00bcd4;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode header .search-bar input {
+    background: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.dark-mode header .search-bar button {
+    background: #555;
+    color: #e0e0e0;
+}
+/* Styles pour le bouton de mode sombre */
+#darkModeToggle {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18pt;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 25px; /* Arrondi plus prononcé */
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* Bordure invisible au départ */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Effet au survol */
+#darkModeToggle:hover {
+    background: rgba(255, 255, 255, 0.3); /* Légère opacité au survol */
+    transform: scale(1.05); /* Agrandissement lors du survol */
+    border-color: #ff6347; /* Bordure colorée au survol */
+}
+
+/* Effet au clic */
+#darkModeToggle:active {
+    background: rgba(255, 255, 255, 0.4); /* Plus clair quand on clique */
+    transform: scale(0.98); /* Réduction légère lors du clic */
+}
+
+/* Animation de la lune et du soleil */
+.icon-sun, .icon-moon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 1.5rem; /* Taille d'icône ajustée */
+}
+
+/* Changer l'apparence des icônes au survol */
+#darkModeToggle:hover .icon-sun, #darkModeToggle:hover .icon-moon {
+    transform: rotate(20deg); /* Légère rotation au survol */
+    opacity: 0.8; /* Diminution de l'opacité pour l'effet */
+}
+
+/* Style de base pour les icônes */
+#darkModeToggle .icon-sun {
+    display: none; /* Initialement cachée */
+}
+
+#darkModeToggle .icon-moon {
+    display: inline-block; /* Initialement affichée */
+}
+
+/* Mode sombre - Afficher le soleil et masquer la lune */
+.dark-mode #moonIcon {
+    display: none;
+}
+
+.dark-mode #sunIcon {
+    display: inline-block;
+}
+

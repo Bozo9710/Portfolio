@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="assets/css/header.css">
-
-    
-</head>
-<body>
-<header>
-        <nav>
-            
-                <a href="#accueil">Accueil</a>
-                <a href="#competences">Compétences</a>
-                <a href="#realisations">Réalisations</a>
-                <a href="#formations">Formations</a>
-                <a href="#contact">Contact</a>
-                <button id="darkModeToggle">
-                    <span id="moonIcon">🌙</span> <!-- Emoji de la lune -->
-                    <span id="sunIcon" style="display: none;">🌞</span> <!-- Emoji du soleil (initialement masqué) -->
-                </button>
-
-
-        </nav>
-    </header>
-    <script>
-
-            // Sélection des éléments du DOM
+    // Sélection des éléments du DOM
     const darkModeToggle = document.getElementById("darkModeToggle");
     const moonIcon = document.getElementById("moonIcon");
     const sunIcon = document.getElementById("sunIcon");
@@ -51,4 +22,3 @@
         }
     });
     
-    </script>

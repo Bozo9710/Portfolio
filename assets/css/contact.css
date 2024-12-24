@@ -1,0 +1,136 @@
+  /* Styles de la page de contact */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #c4daee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+
+}
+
+#contact:hover{
+    transform: scale(1.05);
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+button {
+    display: inline-block;
+    background: linear-gradient(to right, #ff6347, #00bcd4); 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.success {
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #f44336;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mode Nuit - Corps principal */
+.dark-mode body {
+    background-color: #121212; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Formulaire de contact */
+.dark-mode #contact {
+    background: #1e1e1e; /* Fond sombre */
+    border: 1px solid #444; /* Bordure atténuée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Formulaire de contact hover */
+.dark-mode #contact:hover {
+    transform: scale(1.05);
+}
+
+/* Mode Nuit - Titres */
+.dark-mode h1 {
+    color: #00bcd4; /* Texte lumineux */
+}
+
+/* Mode Nuit - Champs de formulaire */
+.dark-mode label {
+    color: #e0e0e0; /* Texte clair */
+}
+
+.dark-mode input, 
+.dark-mode textarea {
+    background-color: #333; /* Fond sombre */
+    border: 1px solid #555; /* Bordure plus claire */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Boutons */
+.dark-mode button {
+    background: linear-gradient(to right, #4caf50, #00bcd4); /* Dégradé lumineux */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Boutons hover */
+.dark-mode button:hover {
+    background: linear-gradient(to left, #4caf50, #00bcd4); /* Dégradé inversé au survol */
+}
+
+/* Mode Nuit - Messages de succès et d'erreur */
+.dark-mode .success {
+    color: #4caf50; /* Vert lumineux */
+}
+
+.dark-mode .error {
+    color: #f44336; /* Rouge lumineux */
+}

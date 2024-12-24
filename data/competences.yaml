@@ -1,25 +1,16 @@
-Competences:
-  - nom: "HTML"
-    niveau: 90
-  - nom: "CSS"
-    niveau: 80
-  - nom: "JAVASCRIPT"
-    niveau: 70
-  - nom: "PHP"
-    niveau: 85
-  - nom: "ETUDE DE TRAM"
-    niveau: 75
-  - nom: "ADRESSEAGE IP"
-    niveau: 65
-  - nom: "SERVICE DHCP"
-    niveau: 60
-  - nom: "SERVICE DNS"
-    niveau: 85
-  - nom: "Traitement de texte"
-    niveau: 80
-  - nom: "Excel"
-    niveau: 90
-  - nom: "Powerpoint"
-    niveau: 70
-  - nom: "Email"
-    niveau: 85
+competences:
+  Code:
+    HTML: 80
+    CSS: 70
+    JAVASCRIPT: 60
+    PHP: 90
+  Réseau:
+    ETUDE_DE_TRAM: 50
+    ADRESSEAGE_IP: 85
+    SERVICE_DHCP: 75
+    SERVICE_DNS: 80
+  Bureautique:
+    Traitement_de_texte: 90
+    Excel: 95
+    Powerpoint: 70
+    Email: 100

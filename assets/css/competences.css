@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c4daee;
+}
+
+.competences {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Utilise une grille flexible */
+    gap: 20px; /* Espacement entre les domaines */
+
+}
+.domaine:hover {
+    transform: scale(1.05);
+}
+.domaine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c4daee;
+    padding: 20px;
+    border-radius: 15px;
+    border-color:blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    z-index: 20;
+    transition: transform 0.2s;
+}
+
+.domaine h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* S'assurer que les compétences prennent toute la largeur disponible */
+}
+
+.competence span {
+    width: 200px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.titre-principal {
+    text-align: center; /* Centre le titre horizontalement */
+    font-size: 2.5rem; /* Taille du texte du titre */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    color: #333; /* Couleur du texte */
+    margin-top: 40px; /* Espacement au-dessus du titre */
+    margin-bottom: 40px; /* Espacement en dessous du titre */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+.barre-fond {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin-left: 0px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.barre {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff6347, #00bcd4);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.pourcentage {
+    position: absolute;
+    right: 10px;
+    top:1px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.legende {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.competence h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.competence p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Corps principal */
+.dark-mode body {
+    background-color: #121212; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Conteneur des compétences */
+
+
+/* Domaine */
+.dark-mode .domaine {
+    background-color: #1e1e1e; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ombre subtile */
+    border-color: #555; /* Bordure sombre */
+}
+
+.dark-mode .domaine:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Ombre plus marquée au survol */
+}
+
+/* Titres des domaines */
+.dark-mode .domaine h2 {
+    color: #00bcd4; /* Couleur vive pour le titre */
+}
+
+/* Compétences */
+.dark-mode .competence {
+    background-color: #333; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ombre subtile */
+}
+
+.dark-mode .competence span {
+    color: #00bcd4; /* Couleur vive pour le texte */
+}
+
+/* Titre principal */
+.dark-mode .titre-principal {
+    color: #00bcd4; /* Couleur vive */
+}
+
+/* Barre de progression */
+.dark-mode .barre-fond {
+    background-color: #333; /* Fond sombre */
+}
+
+.dark-mode .barre {
+    background: linear-gradient(to right, #515151, #00bcd4); /* Dégradé lumineux */
+}
+
+.dark-mode .pourcentage {
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Légende */
+.dark-mode .legende {
+    color: #00bcd4; /* Texte vif pour la légende */
+}
+
+/* Texte de compétence */
+.dark-mode .competence h2 {
+    color: #e0e0e0; /* Texte clair */
+}
+
+.dark-mode .competence p {
+    color: #bbb; /* Texte légèrement atténué */
+}

@@ -16,4 +16,6 @@ body {
 }
 
 
-
+.dark-mode body {
+    background-image:url("./../image/background1.jpg") ;
+}

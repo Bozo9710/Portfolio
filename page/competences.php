@@ -1,6 +1,14 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Compétences</title>
+    <link rel="stylesheet" href="assets/css/competences.css">
+</head>
 <section id="competences">
 <h1 class="page-title">Mes Compétences</h1>
+<script src="./../assets/js/competences.js"></script>
 <?php
 // Charger et analyser le fichier YAML
 require_once("../yaml/yaml.php");
@@ -35,131 +43,7 @@ function afficher_barre($niveau) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Compétences</title>
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #c4daee;
-}
 
-.competences {
-    width: 90%;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Utilise une grille flexible */
-    gap: 20px; /* Espacement entre les domaines */
-
-}
-.domaine:hover {
-    transform: scale(1.05);
-}
-.domaine {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #c4daee;
-    padding: 20px;
-    border-radius: 15px;
-    border-color:blue;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    z-index: 20;
-    transition: transform 0.2s;
-}
-
-.domaine h2 {
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.competence {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* S'assurer que les compétences prennent toute la largeur disponible */
-}
-
-.competence span {
-    width: 200px;
-    font-size: 1.2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.titre-principal {
-    text-align: center; /* Centre le titre horizontalement */
-    font-size: 2.5rem; /* Taille du texte du titre */
-    font-family: 'Arial', sans-serif; /* Police de caractères */
-    color: #333; /* Couleur du texte */
-    margin-top: 40px; /* Espacement au-dessus du titre */
-    margin-bottom: 40px; /* Espacement en dessous du titre */
-    font-weight: bold; /* Met le texte en gras */
-}
-
-.barre-fond {
-    width: 100%;
-    height: 30px;
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    margin-left: 0px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.barre {
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(to right, #ff6347, #00bcd4);
-    background-size: 100% 100%;
-    position: relative;
-}
-
-.pourcentage {
-    position: absolute;
-    right: 10px;
-    font-size: 0.8rem;
-    color: #333;
-    font-weight: bold;
-}
-
-.legende {
-    font-size: 1rem;
-    color: #333;
-    margin-top: 5px;
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-}
-
-.competence h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0;
-}
-
-.competence p {
-    font-size: 1rem;
-    color: #666;
-}
-
-
-    </style>
-</head>
 <body>
 <?php
 // Exemple de données pour les compétences par domaine
@@ -207,3 +91,4 @@ $competences = [
     
 </body>
 </html>
+

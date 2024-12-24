@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#formations ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.2s;
+
+}
+
+#formations li {
+    background: #c4daee;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+
+}
+#formations li:hover{
+    transform: scale(1.05);
+    
+}
+
+/* Bouton pour voir l'établissement */
+.btn-voir-etablissement {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background:linear-gradient(to right, #ff6347, #00bcd4); 
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: fit-content;
+}
+
+.btn-voir-etablissement:hover {
+    background:linear-gradient(to left, #ff6347, #00bcd4);
+    transform: scale(1.05);
+
+}
+
+#cv .btn {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background:linear-gradient(to right, #ff6347, #00bcd4);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: fit-content;
+    justify-content: center; /* Centre horizontalement */
+
+}
+
+#cv .btn:hover {
+    background:linear-gradient(to left, #ff6347, #00bcd4);
+    transform: scale(1.05);
+}
+/* Mode Nuit - Corps principal */
+.dark-mode body {
+    background-color: #121212; /* Fond sombre */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Titres */
+.dark-mode h1, .dark-mode h2 {
+    color: #00bcd4; /* Texte lumineux */
+}
+
+/* Mode Nuit - Liste de formations */
+.dark-mode #formations li {
+    background: #1e1e1e; /* Fond sombre */
+    border: 1px solid #444; /* Bordure atténuée */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Liste de formations hover */
+.dark-mode #formations li:hover {
+    transform: scale(1.05);
+    background: #333; /* Changer le fond au survol */
+}
+
+/* Mode Nuit - Boutons */
+.dark-mode .btn-voir-etablissement, 
+.dark-mode #cv .btn {
+    background: linear-gradient(to right, #4caf50, #00bcd4); /* Dégradé lumineux */
+    color: #e0e0e0; /* Texte clair */
+}
+
+/* Mode Nuit - Boutons hover */
+.dark-mode .btn-voir-etablissement:hover, 
+.dark-mode #cv .btn:hover {
+    background: linear-gradient(to left, #4caf50, #00bcd4); /* Dégradé inversé au survol */
+    transform: scale(1.05);
+}

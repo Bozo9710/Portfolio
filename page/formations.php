@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations</title>
+    <link rel="stylesheet" href="assets/css/formations.css">
+</head> 
+<script src="./../assets/js/formations.js"></script>
+
 <?php
 // Chargement du fichier YAML
 $data = yaml_parse_file('data/formations.yaml');
-
 if (!$data) {
     die("Erreur : Impossible de charger le fichier YAML.");
 }
-
 // Extraction des formations à partir des clés dynamiques
 $formations = [];
 $i = 1;
@@ -19,94 +27,6 @@ while (isset($data["formation{$i}_titre"])) {
     $i++;
 }
 ?>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2.5rem;
-        color: #333;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 1.8rem;
-        color: #333;
-    }
-
-    #formations ul {
-        list-style: none;
-        padding: 0;
-        max-width: 800px;
-        margin: 20px auto;
-        transition: transform 0.2s;
-
-    }
-
-    #formations li {
-        background: #c4daee;
-        margin: 10px 0;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        transition: transform 0.2s;
-
-    }
-    #formations li:hover{
-        transform: scale(1.05);
-        
-    }
-
-    /* Bouton pour voir l'établissement */
-    .btn-voir-etablissement {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        background:linear-gradient(to right, #ff6347, #00bcd4); 
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background 0.3s ease;
-        width: fit-content;
-    }
-
-    .btn-voir-etablissement:hover {
-        background:linear-gradient(to left, #ff6347, #00bcd4);
-        transform: scale(1.05);
-
-    }
-
-    #cv .btn {
-        display: flex;
-        margin: 20px auto;
-        padding: 10px 20px;
-        background:linear-gradient(to right, #ff6347, #00bcd4);
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background 0.3s ease;
-        width: fit-content;
-        justify-content: center; /* Centre horizontalement */
-
-    }
-
-    #cv .btn:hover {
-        background:linear-gradient(to left, #ff6347, #00bcd4);
-        transform: scale(1.05);
-    }
-
-</style>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const btn = document.querySelector('.btn');
