@@ -11,7 +11,7 @@
 <script src="./../assets/js/competences.js"></script>
 <?php
 // Charger et analyser le fichier YAML
-require_once("../yaml/yaml.php");
+require_once("./yaml/yaml.php");
 $competences = yaml_parse_file('data/competences.yaml'); // Assurez-vous que le chemin est correct
 
 // Vérifier si le fichier YAML a bien été chargé

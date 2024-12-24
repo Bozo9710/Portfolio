@@ -9,7 +9,7 @@
 <script src="./../assets/js/realisations.js"></script>
 
 <?php
-require_once("../yaml/yaml.php");
+require_once("./yaml/yaml.php");
 $data = yaml_parse_file("data/realisations.yaml");
 
 // Convertir les données YAML en un tableau PHP

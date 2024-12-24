@@ -6,21 +6,14 @@ class ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f
 {
     private static $loader;
 
-    /**
-     * Charge le fichier de la classe si nécessaire
-     *
-     * @param string $class La classe à charger
-     */
     public static function loadClassLoader($class)
     {
         if ('Composer\Autoload\ClassLoader' === $class) {
-            require __DIR__ . '/ClassLoader.php'; // Assurez-vous que ClassLoader.php existe
+            require __DIR__ . '/ClassLoader.php';
         }
     }
 
     /**
-     * Récupère l'instance de l'autoloader
-     *
      * @return \Composer\Autoload\ClassLoader
      */
     public static function getLoader()
@@ -29,47 +22,25 @@ class ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f
             return self::$loader;
         }
 
-        // Vérifie la plateforme (assurez-vous que ce fichier existe)
-        $platformCheckFile = __DIR__ . '/platform_check.php';
-        if (file_exists($platformCheckFile)) {
-            require $platformCheckFile;
-        } else {
-            // Ajoutez un message d'erreur si le fichier est manquant
-            throw new \RuntimeException("Le fichier 'platform_check.php' est manquant.");
-        }
+        require __DIR__ . '/platform_check.php';
 
-        // Enregistrement temporaire de l'autoloader pour la classe 'ClassLoader'
         spl_autoload_register(array('ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f', 'loadClassLoader'), true, true);
-
-        // Crée une nouvelle instance de l'autoloader
         self::$loader = $loader = new \Composer\Autoload\ClassLoader(\dirname(__DIR__));
-
-        // Désenregistrement de l'autoloader temporaire
         spl_autoload_unregister(array('ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f', 'loadClassLoader'));
 
-        // Vérifie que le fichier 'autoload_static.php' existe avant de l'inclure
-        $autoloadStaticFile = __DIR__ . '/autoload_static.php';
-        if (file_exists($autoloadStaticFile)) {
-            require $autoloadStaticFile;
-        } else {
-            throw new \RuntimeException("Le fichier 'autoload_static.php' est manquant.");
-        }
-
-        // Initialisation de l'autoloader statique
+        require __DIR__ . '/autoload_static.php';
         call_user_func(\Composer\Autoload\ComposerStaticInit1d14b066a73960476c178ecf92bed18f::getInitializer($loader));
 
-        // Enregistrement final de l'autoloader
         $loader->register(true);
 
-        // Chargement des fichiers définis dans Composer
         $filesToLoad = \Composer\Autoload\ComposerStaticInit1d14b066a73960476c178ecf92bed18f::$files;
         $requireFile = \Closure::bind(static function ($fileIdentifier, $file) {
             if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
                 $GLOBALS['__composer_autoload_files'][$fileIdentifier] = true;
+
                 require $file;
             }
         }, null, null);
-
         foreach ($filesToLoad as $fileIdentifier => $file) {
             $requireFile($fileIdentifier, $file);
         }

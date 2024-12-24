@@ -9,7 +9,7 @@
 <section id="accueil">
 
     <?php
-    require_once("../yaml/yaml.php");
+    require_once("./yaml/yaml.php");
     $data=yaml_parse_file("data/accueil.yaml");?>
 
     <!-- Section présentation de tes projets -->
