@@ -3,7 +3,7 @@
 /*****************************************************
 https://symfony.com/doc/current/components/yaml.html
 ******************************************************/
-
+require('./yaml/vendor/autoload.php');
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;
  
